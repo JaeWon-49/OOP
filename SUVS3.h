@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include "CarS3.h"
 class SUV : public Car {
 private:
