@@ -17,8 +17,6 @@ public:
 	virtual void klaxon(int);
 
 	Car operator+(Car& car) {
-		speed = speed + car.speed;
-		price = price + car.price;
-		return Car(speed, price);
+		return Car(speed+car.speed, price+car.price);
 	}
 };
