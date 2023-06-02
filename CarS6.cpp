@@ -1,8 +1,9 @@
 #include "CarS6.h"
 #include <iostream>  //  for cout
 
-Car::Car(float ss, float pp) {
+Car::Car(float ss, int ww, float pp) {
 	speed = ss;
+	wheels = ww;
 	price = pp;
 	std::cout << " new Car \n";
 }
@@ -20,4 +21,11 @@ void Car::klaxon(int n) {
 	for (int i = 0; i < n; i++) {
 		std::cout << "  no horn \n";
 	}
+}
+Car Car::operator+(Car& car) {
+	Car c;
+	c.speed = speed + car.speed;
+	c.wheels = wheels + car.wheels;
+	c.price = price + car.price;
+	return c;
 }
