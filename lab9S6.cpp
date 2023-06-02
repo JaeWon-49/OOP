@@ -1,15 +1,14 @@
 #include <iostream>
 using namespace std;
 #include "CarS6.h"
-#include "SUVS6.h"
 int main()
 {
-	Car A;
-	Car B;
+	Car A = Car();
+	Car B = Car();
 	Car C = A + B;
-	cout << A.price << endl;
-	cout << B.price << endl;
-	cout << C.price << endl;
+	cout << A.price << " " << A.speed << endl;
+	cout << B.price << " " << B.speed << endl;
+	cout << C.price << " " << C.speed << endl;
 
 	return 123;
 }
