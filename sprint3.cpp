@@ -28,7 +28,7 @@ int main()
 		}
 		for (int i = 0; i < k; i++)
 		{
-			queue.push_back(rand() % NI);
+			queue.push_back(rand() % 20);
 		}
 		for (int i = 0; i < n; i++)
 		{
